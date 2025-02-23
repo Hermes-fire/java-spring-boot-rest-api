@@ -1,4 +1,4 @@
-# Book API
+# REST API
 
 A simple REST API for managing books, built with Spring Boot, JPA, and H2 database.
 
@@ -19,7 +19,9 @@ A simple REST API for managing books, built with Spring Boot, JPA, and H2 databa
 
 ## API Endpoints
 
-### Get All Books
+### Books
+
+#### Get All Books
 
 ```http
 GET api/books
@@ -27,7 +29,7 @@ GET api/books
 
 Returns a list of all books.
 
-### Get Book by ID
+#### Get Book by ID
 
 ```http
 GET api/books/{id}
@@ -35,7 +37,7 @@ GET api/books/{id}
 
 Returns a single book by its ID.
 
-### Create a New Book
+#### Create a New Book
 
 ```http
 POST api/books
@@ -43,7 +45,7 @@ POST api/books
 
 Creates a new book. Requires a JSON body with book details.
 
-### Update a Book
+#### Update a Book
 
 ```http
 PUT api/books/{id}
@@ -51,13 +53,55 @@ PUT api/books/{id}
 
 Updates an existing book by its ID.
 
-### Delete a Book
+#### Delete a Book
 
 ```http
 DELETE api/books/{id}
 ```
 
 Deletes a book by its ID.
+
+### Products (Using DTO)
+
+#### Get All Products
+
+```http
+GET api/products
+```
+
+Returns a list of all products.
+
+#### Get Product by ID
+
+```http
+GET api/products/{id}
+```
+
+Returns a single product by its ID.
+
+#### Create a New Product
+
+```http
+POST api/products
+```
+
+Creates a new product.
+
+#### Update a Product
+
+```http
+PUT api/products/{id}
+```
+
+Updates an existing product by its ID.
+
+#### Delete a Product
+
+```http
+DELETE api/products/{id}
+```
+
+Deletes a product by its ID.
 
 ## Testing
 
